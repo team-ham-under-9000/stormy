@@ -40,6 +40,15 @@ button {
   color: $water-sixly-color;
   border-radius: 7px;
 }
-
-.weather__icon {
+i {
+  color: $water-primary-color;
+}
+.temperature:after {
+  content: "°C";
+}
+.wind-deg:after {
+  content: "°";
+}
+.wind-speed:after {
+  content: " beaufort";
 }
