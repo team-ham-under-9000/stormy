@@ -15,10 +15,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./scss/style.scss" />
-    <title>We are sailing in the wind</title>
+    <title>StormWarning</title>
   </head>
   <body>
-    <h1>Storm Warning</h1>
+    <h1>Is a storm coming?</h1>
     <input
       type="number"
       class="search__latt"
@@ -32,7 +32,16 @@
       placeholder="Please enter Longitude"
     />
     <button class="search__submit">Submit your position</button>
-    <div class="results"></div>
-    <script src="./index.js"></script>
+    <div class="results">
+      <div class="name">San Fransisco</div>
+      <div class="weather__icon">
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
+      </div>
+      <div class="temperature">23 °C</div>
+      <div class="wind__deg">030°</div>
+      <div class="wind_speed">beaufort</div>
+      <div class="warning">Stay relaxed</div>
+      <script src="./index.js"></script>
+    </div>
   </body>
 </html>
