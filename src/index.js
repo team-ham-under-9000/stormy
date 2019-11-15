@@ -12,8 +12,8 @@ searchButton.addEventListener("click", () => {
   const longValue = searchLong.value;
   getCity(lattValue, longValue).then(data => {
     const cityName = data.name;
-    const cityTemperature = data.main.temp;
-    // const cityTemperature = (cityTemperatureFahrenheit - 32) / 1.8;
+    const cityTemperatureFahrenheit = data.main.temp;
+    const cityTemperature = Math.floor(cityTemperatureFahrenheit - 273.15);
     const nameResult = createElements("name");
     const temperatureResult = createElements("temperatur");
     results.appendChild(nameResult);
