@@ -15,7 +15,6 @@ searchButton.addEventListener("click", () => {
     const cityTemperatureFahrenheit = data.main.temp;
     const cityTemperature = Math.floor(cityTemperatureFahrenheit - 273.15);
     const iconID = data.weather[0].icon;
-    console.error(data.weather[0].icon);
     const iconURL = `http://openweathermap.org/img/wn/${iconID}.png`;
     const nameResult = createElements("name");
     const temperatureResult = createElements("temperatur");
